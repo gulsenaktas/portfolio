@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito';
+  background-color: #ffffff;
+}
+
+body .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+body .wrapper .left {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper .left .logo {
+  height: 66.5vh;
+  background-color: #00f863;
+  color: #ffffff;
+  font-family: "Abril Fatface", cursive;
+}
+
+body .wrapper .left .logo .hi {
+  font-size: 8vw;
+  margin: 2vw 0 1vw 2vw;
+}
+
+body .wrapper .left .logo .who {
+  font-size: 4vw;
+  margin: 2vw 0 1vw 2vw;
+}
+
+body .wrapper .left .logo .note {
+  font-size: 1vw;
+  margin: 2vw 0 1vw 2vw;
+}
+
+body .wrapper .left .left-bottom {
+  height: 32vh;
+  color: #989898;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10vh;
+}
+
+body .wrapper .left .left-bottom .text {
+  margin-top: 17vh;
+}
+
+body .wrapper .left .left-bottom .contact {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper .left .left-bottom .contact .icon {
+  color: #989898;
+}
+
+body .wrapper .right {
+  width: 100%;
+}
+
+body .wrapper .right .boxs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .wrapper .right .boxs .box {
+  width: 44.66vh;
+  min-width: 44.66vh;
+  height: 33vh;
+}
+
+body .wrapper .right .boxs .box1::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 32.55vh;
+  height: 32.55vh;
+  top: 7%;
+  left: 33%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+body .wrapper .right .boxs .box2::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #989898;
+  background-color: #ffffff;
+  width: 32.55vh;
+  height: 32.55vh;
+  top: 5%;
+  left: 32%;
+  border-radius: 50%;
+}
+
+body .wrapper .right .boxs .box4 {
+  width: 32.55vh;
+}
+
+body .wrapper .right .boxs .box4::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 42vh;
+  height: 42vh;
+  top: 34.3%;
+  left: 66.5%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+body .wrapper .right .boxs .box5 {
+  border-left: 3px solid #00f863;
+}
+
+body .wrapper .right .boxs .box5 .box5-half1 {
+  height: 50%;
+  width: 60%;
+  border-top: 3px solid #00f863;
+}
+
+body .wrapper .right .boxs .box5 .box5-half2 {
+  height: 50%;
+}
+
+body .wrapper .right .boxs .box5::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 21vh;
+  height: 21vh;
+  top: 69%;
+  left: 49.1%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+body .wrapper .right .boxs .box6::after {
+  position: absolute;
+  content: "weather";
+  color: yellow;
+  border-left: 1px solid #989898;
+  border-top: 1px solid #989898;
+  background-color: #ffffff;
+  width: 26.04vh;
+  height: 26.04vh;
+  top: 14%;
+  left: 55%;
+  border-radius: 50%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 5000ms;
+          animation-duration: 5000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body .wrapper .right .boxs .box7 {
+  width: 32.55vh;
+  border-top: 3px solid #00f863;
+}
+
+body .wrapper .right .boxs .box7::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #989898;
+  background-color: #ffffff;
+  width: 45.57vh;
+  height: 45.57vh;
+  top: 34%;
+  left: 67%;
+  border-radius: 50%;
+}
+
+body .wrapper .right .boxs .box8 {
+  border-top: 3px solid #00f863;
+}
+
+body .wrapper .right .boxs .box8 .box8-half1 {
+  border-right: 2px solid #00f863;
+  height: 50%;
+  width: 50%;
+}
+
+body .wrapper .right .boxs .box8 .box8-half2 {
+  height: 50%;
+}
+
+body .wrapper .right .boxs .box8::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #989898;
+  background-color: #ffffff;
+  width: 23.43vh;
+  height: 23.43vh;
+  top: 70%;
+  left: 48.5%;
+  border-radius: 50%;
+}
+
+body .wrapper .right .boxs .box9 .box9-half1 {
+  border-top: 3px solid #00f863;
+  height: 50%;
+  width: 50%;
+}
+
+body .wrapper .right .boxs .box9 .box9-half2 {
+  height: 50%;
+}
+
+body .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #00f863;
+  color: #ffffff;
+  top: 0%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Abril Fatface", cursive;
+  display: none;
+}
+
+body .h1 {
+  font-size: 100px;
+  letter-spacing: 20px;
+}
+
+body .overlay span {
+  font-size: 30px;
+  letter-spacing: 3px;
+}

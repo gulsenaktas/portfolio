@@ -1,0 +1,267 @@
+$color1 : #ff753e;
+$color2 : #00f863;
+$color3 : #ffffff;
+$color4 : #989898;
+$font1 : 'Abril Fatface', cursive; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Nunito';
+    background-color: $color3;
+
+    .wrapper{
+        display: flex;
+        height: 100vh;
+        .left{
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .logo{
+                height: 66.5vh;
+                background-color: $color2;
+                color: $color3;
+                font-family: $font1;
+                .hi{
+                    font-size: 8vw;
+                    margin: 2vw 0 1vw 2vw;
+                }
+                .who{
+                    font-size: 4vw;
+                    margin:2vw 0 1vw 2vw;
+                }
+                .note{
+                    font-size: 1vw;
+                    margin: 2vw 0 1vw 2vw;
+                }
+            }
+            .left-bottom{
+                height: 32vh;
+                color: $color4;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 10vh;
+                .text{
+                    margin-top: 17vh;
+                }
+                .contact{
+                    height: 20vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .icon{
+                        color:$color4;
+                    }
+                }
+            }
+        }
+        
+        .right{
+            width: 100%;
+            .boxs{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .box{
+                    width: 44.66vh;
+                    min-width: 44.66vh;
+                    height: 33vh;
+
+                }
+                // gölge1
+                .box1{
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background-color: white;
+                        width: 32.55vh;
+                        height: 32.55vh;
+                        top: 7%;
+                        left: 33%;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+                }
+                // 1.balon
+                .box2{
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        border: 1px solid $color4;
+                        background-color: $color3;
+                        width: 32.55vh;
+                        height: 32.55vh;
+                        top: 5%;
+                        left: 32%;
+                        border-radius: 50%;
+                    }
+                }
+                // gölge2
+                //.box3{
+                    // &::after{
+                    //     position: absolute;
+                    //     content: "";
+                    //     background-color:red;
+                    //     width: 24vh;
+                    //     height: 24vh;
+                    //     top: 18%;
+                    //     left: 55.5%;
+                    //     border-radius: 50%;
+                    //     z-index: 1;
+                    //     // animation-name: spin;
+                    //     animation-duration: 15s;
+                    //     animation-iteration-count: infinite;
+                    //     animation-timing-function: ease-in; 
+                    // }
+                //}
+                // gölge3
+                .box4{
+                    width: 32.55vh;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background-color: white;
+                        width: 42vh;
+                        height: 42vh;
+                        top: 34.3%;
+                        left: 66.5%;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+                }
+                // gölge4
+                .box5{
+                    border-left: 3px solid $color2;
+                    // border-top: 3px solid $color2;
+                    .box5-half1{
+                        height: 50%;
+                        width: 60%;
+                        border-top: 3px solid $color2;
+                    }
+                    .box5-half2{
+                        height: 50%;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background-color: white;
+                        width: 21vh;
+                        height: 21vh;
+                        top: 69%;
+                        left: 49.1%;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+                }
+                // 2.balon
+                .box6{
+                    &::after{
+                        position: absolute;
+                        content: "weather";
+                        color: yellow;
+                        border-left: 1px solid $color4;
+                        border-top: 1px solid $color4;
+                        background-color: $color3;
+                        width: 26.04vh;
+                        height: 26.04vh;
+                        top: 14%;
+                        left: 55%;
+                        border-radius: 50%;
+                        animation-name: spin;
+                        animation-duration: 5000ms;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear; 
+
+                    }
+                    @keyframes spin {
+                        from {
+                            transform:rotate(0deg);
+                        }
+                        to {
+                            transform:rotate(360deg);
+                        }
+                    }
+                }
+                .box7{
+                    width: 32.55vh;
+                    border-top: 3px solid $color2;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        border: 1px solid $color4;
+                        background-color: $color3;
+                        width: 45.57vh;
+                        height: 45.57vh;
+                        top: 34%;
+                        left: 67%;
+                        border-radius: 50%;
+                    }
+                }
+                // 4.balon
+                .box8{
+                    border-top: 3px solid $color2;
+                    .box8-half1{
+                        border-right: 2px solid $color2;
+                        height: 50%;
+                        width: 50%;
+                    }
+                    .box8-half2{
+                        height: 50%;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        border: 1px solid $color4;
+                        background-color: $color3;
+                        width: 23.43vh;
+                        height: 23.43vh;
+                        top: 70%;
+                        left: 48.5%;
+                        border-radius: 50%;
+                    }
+                }
+                // 3.balon
+                .box9{
+                    .box9-half1{
+                        border-top: 3px solid $color2;
+                        height: 50%;
+                        width: 50%;
+                    }
+                    .box9-half2{
+                        height: 50%;
+                    }
+                }
+            }
+            
+        }
+    }
+    .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: $color2;
+    color: $color3;
+    top: 0%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font1;
+    display: none;
+    }
+    .h1 {
+    font-size: 100px;
+    letter-spacing: 20px;
+    }
+    .overlay span {
+    font-size: 30px;
+    letter-spacing: 3px;
+    }
+}
+

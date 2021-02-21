@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+font-family: 'Nunito';
+background-color: #b8c89f;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.logo{
+    height: 65vh;
+    background-color: #ff8d60;
+    color: white;
+}
+.hi{
+    font-size: 8vw;
+    margin: 2vw 0 1vw 2vw;
+}
+.who{
+    font-size: 4vw;
+    margin:2vw 0 1vw 2vw;
+}
+.note{
+    font-size: 1vw;
+    margin: 2vw 0 1vw 2vw;
+}
+.left-bottom{
+    color: white;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15vh
+}
+.text{
+    margin: 6vw 0 0 2vw;
+}
+.contact{
+    height: 20vh;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right{
+    margin: 20vh auto;
+}
+.right-contain{
+    height: 70vh;
+    display: flex;
+    flex-direction: column; 
+}
+.helper{
+    position: absolute;
+    left: 50%;
+}
+.helper::after{
+    position: absolute;
+    content: "";
+    height: 70vh;
+    width: 33vw;
+    background-color: #ffeb00;
+}
+.right-contain-top{
+    display: flex;
+    height: 50%;
+    width: 450px;
+}
+.right-contain-down{
+    display: flex;
+    height: 50%;
+    width: 450px;
+}
+.box{
+    width: 50%;
+    position: relative;
+    color: white;
+}
+
+.w{
+    border-right: 1px solid #494949;
+    border-bottom: 1px solid #494949;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 50px;
+    background-color: #b8c89f;
+}
+.w::after{
+    position: absolute;
+    content: "";  
+    width: 105%;
+    height: 105%;  
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to bottom right, #ff4800, #f7f8fe, #ff8d60);
+    background-size: 300% 300%;
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+}
+.e{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 50px;
+}
+.c{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 50px;
+}
+.t{
+    border-top: 1px solid #494949;
+    border-left: 1px solid #494949;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 50px;
+    background-color: #b8c89f;
+}
+.t::after{
+    position: absolute;
+    content: "";  
+    width: 104%;
+    height: 104%;  
+    top: -4%;
+    left: -4%;
+    z-index: -1;        
+    background-image: linear-gradient(to bottom right, #ff4800,#ffffff, #ff8d60);
+    background-size: 300% 300%;
+    animation: moveGradient 4s alternate infinite;
+}
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+}
+  
+.app{
+    position: absolute;
+    font-size: 15px;
+    margin: -30px 10px ;
+    text-align: left;
+    display: none;
+}
+.todo{
+    text-align: right;
+}
+.exchange{
+    text-align: right;
+}
+.overlay {
+position: absolute;
+width: 100%;
+height: 100vh;
+background-color: #ff8d60;
+color: white;
+top: 0%;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.h1 {
+font-size: 100px;
+letter-spacing: 20px;
+}
+
+.overlay span {
+font-size: 30px;
+letter-spacing: 3px;
+}
