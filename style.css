@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: "Nunito", cursive;
   background-color: #ffffff;
 }
 
@@ -69,6 +69,16 @@ body .wrapper .left .left-bottom .text {
   margin-top: 17vh;
 }
 
+body .wrapper .left .left-bottom .text::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid #989898;
+  width: 5vw;
+  margin: 0 10px 0 0;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
 body .wrapper .left .left-bottom .contact {
   height: 20vh;
   display: -webkit-box;
@@ -85,6 +95,7 @@ body .wrapper .left .left-bottom .contact {
 
 body .wrapper .left .left-bottom .contact .icon {
   color: #989898;
+  cursor: pointer;
 }
 
 body .wrapper .right {
@@ -104,46 +115,7 @@ body .wrapper .right .boxs .box {
   width: 44.66vh;
   min-width: 44.66vh;
   height: 33vh;
-}
-
-body .wrapper .right .boxs .box1::after {
-  position: absolute;
-  content: "";
-  background-color: white;
-  width: 32.55vh;
-  height: 32.55vh;
-  top: 7%;
-  left: 33%;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-body .wrapper .right .boxs .box2::after {
-  position: absolute;
-  content: "";
-  border: 1px solid #989898;
-  background-color: #ffffff;
-  width: 32.55vh;
-  height: 32.55vh;
-  top: 5%;
-  left: 32%;
-  border-radius: 50%;
-}
-
-body .wrapper .right .boxs .box4 {
-  width: 32.55vh;
-}
-
-body .wrapper .right .boxs .box4::after {
-  position: absolute;
-  content: "";
-  background-color: white;
-  width: 42vh;
-  height: 42vh;
-  top: 34.3%;
-  left: 66.5%;
-  border-radius: 50%;
-  z-index: 1;
+  z-index: -1;
 }
 
 body .wrapper .right .boxs .box5 {
@@ -160,77 +132,9 @@ body .wrapper .right .boxs .box5 .box5-half2 {
   height: 50%;
 }
 
-body .wrapper .right .boxs .box5::after {
-  position: absolute;
-  content: "";
-  background-color: white;
-  width: 21vh;
-  height: 21vh;
-  top: 69%;
-  left: 49.1%;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-body .wrapper .right .boxs .box6::after {
-  position: absolute;
-  content: "weather";
-  color: yellow;
-  border-left: 1px solid #989898;
-  border-top: 1px solid #989898;
-  background-color: #ffffff;
-  width: 26.04vh;
-  height: 26.04vh;
-  top: 14%;
-  left: 55%;
-  border-radius: 50%;
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 5000ms;
-          animation-duration: 5000ms;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 body .wrapper .right .boxs .box7 {
   width: 32.55vh;
   border-top: 3px solid #00f863;
-}
-
-body .wrapper .right .boxs .box7::after {
-  position: absolute;
-  content: "";
-  border: 1px solid #989898;
-  background-color: #ffffff;
-  width: 45.57vh;
-  height: 45.57vh;
-  top: 34%;
-  left: 67%;
-  border-radius: 50%;
 }
 
 body .wrapper .right .boxs .box8 {
@@ -247,18 +151,6 @@ body .wrapper .right .boxs .box8 .box8-half2 {
   height: 50%;
 }
 
-body .wrapper .right .boxs .box8::after {
-  position: absolute;
-  content: "";
-  border: 1px solid #989898;
-  background-color: #ffffff;
-  width: 23.43vh;
-  height: 23.43vh;
-  top: 70%;
-  left: 48.5%;
-  border-radius: 50%;
-}
-
 body .wrapper .right .boxs .box9 .box9-half1 {
   border-top: 3px solid #00f863;
   height: 50%;
@@ -267,6 +159,146 @@ body .wrapper .right .boxs .box9 .box9-half1 {
 
 body .wrapper .right .boxs .box9 .box9-half2 {
   height: 50%;
+}
+
+body .wrapper .right .baloons .baloon {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+body .wrapper .right .baloons .baloon-one {
+  position: absolute;
+  border-left: 4px solid #989898;
+  border-top: 4px solid #989898;
+  width: 32.55vh;
+  height: 32.55vh;
+  top: 9%;
+  left: 33%;
+}
+
+body .wrapper .right .baloons .baloon-one:hover {
+  border-color: green;
+}
+
+body .wrapper .right .baloons .baloon-two {
+  position: absolute;
+  border-bottom: 4px solid #989898;
+  border-right: 4px solid #989898;
+  width: 26.04vh;
+  height: 26.04vh;
+  top: 14%;
+  left: 55%;
+}
+
+body .wrapper .right .baloons .baloon-two:hover {
+  border-color: green;
+  -webkit-animation: spin 5s linear 0s infinite;
+          animation: spin 5s linear 0s infinite;
+}
+
+body .wrapper .right .baloons .baloon-three {
+  position: absolute;
+  border-left: 4px solid #989898;
+  border-top: 4px solid #989898;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  width: 45.57vh;
+  height: 45.57vh;
+  top: 34%;
+  left: 67%;
+}
+
+body .wrapper .right .baloons .baloon-three:hover {
+  border-color: green;
+  -webkit-animation: spin 5s linear 0s infinite;
+          animation: spin 5s linear 0s infinite;
+}
+
+body .wrapper .right .baloons .baloon-four {
+  position: absolute;
+  border-right: 4px solid #989898;
+  border-bottom: 4px solid #989898;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+  width: 23.43vh;
+  height: 23.43vh;
+  top: 70%;
+  left: 48.5%;
+}
+
+body .wrapper .right .baloons .baloon-four:hover {
+  border-color: green;
+  -webkit-animation: spin 5s linear 0s infinite;
+          animation: spin 5s linear 0s infinite;
+}
+
+body .wrapper .right .infos .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body .wrapper .right .infos .info-one {
+  position: absolute;
+  width: 30vh;
+  height: 30vh;
+  top: 10%;
+  left: 33.5%;
+  background-image: url(./img/weather.png);
+}
+
+body .wrapper .right .infos .info-one .text1 {
+  display: none;
+}
+
+body .wrapper .right .infos .info-two {
+  position: absolute;
+  width: 24vh;
+  height: 24vh;
+  top: 15%;
+  left: 55.5%;
+  background-image: url(./img/exchange.png);
+}
+
+body .wrapper .right .infos .info-two .text2 {
+  display: none;
+}
+
+body .wrapper .right .infos .info-three {
+  position: absolute;
+  width: 43vh;
+  height: 43vh;
+  top: 35%;
+  left: 67.5%;
+  background-image: url(./img/stringifly.png);
+}
+
+body .wrapper .right .infos .info-three .text3 {
+  display: none;
+}
+
+body .wrapper .right .infos .info-four {
+  position: absolute;
+  width: 22vh;
+  height: 22vh;
+  top: 70.8%;
+  left: 48.8%;
+  background-image: url(./img/todo.png);
+}
+
+body .wrapper .right .infos .info-four .text4 {
+  display: none;
 }
 
 body .overlay {
@@ -291,7 +323,6 @@ body .overlay {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Abril Fatface", cursive;
-  display: none;
 }
 
 body .h1 {
@@ -302,4 +333,26 @@ body .h1 {
 body .overlay span {
   font-size: 30px;
   letter-spacing: 3px;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
