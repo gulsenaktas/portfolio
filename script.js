@@ -51,17 +51,18 @@ const overlay=document.querySelector(".overlay")
         ease: Expo.easeInOut
     })
     
+    
     TweenMax.from(".contact", 2, {
         delay: 2,
         opacity: 0,
-        y: 100,
+        y: -100,
         ease: Expo.easeInOut
     })
     
     TweenMax.from(".text", 2, {
         delay: 2,
         opacity: 0,
-        y: 100,
+        y: -100,
         ease: Expo.easeInOut
     })
 
@@ -160,10 +161,19 @@ const boxColor = document.querySelector(".boxcolor");
 
 infoOne.addEventListener("mouseenter", e=>{
     
-        baloonOne.style.animation = "spin 3s linear 0s infinite"
-        baloonOne.style.borderColor = "#02cf54"
-        infoOne.style.background = "#ffffff"
-        text1.style.display= "block"
+    baloonOne.style.animation = "spin 3s linear 0s infinite"
+    baloonOne.style.borderColor = "#02cf54"
+    infoOne.style.background = "#ffffff"
+    text1.style.display= "block"
+
+    gsap.to(".content",{
+        duration:1,
+        opacity: 1,
+        ease: Expo.easeInOut,
+        onComplete:complete
+    })
+
+    function complete(){
         logo.style.fontFamily= "Nunito"
         logo.style.paddingTop= "5vw"
         hi.textContent = "Weather app"
@@ -172,8 +182,14 @@ infoOne.addEventListener("mouseenter", e=>{
         who.style.fontSize = "4vh"
         note.innerText = "Local Storage\nAsync JS\nFetch API\nResposive Design\nSass"
         note.style.fontSize = "3vh"
-        logo.style.backgroundColor ="#02cf54"
 
+        gsap.from(".content",{
+            duration: 1,
+            y: -100,
+            opacity:0,
+            ease: Expo.easeInOut,
+        })
+    }
 })
 
 infoOne.addEventListener("mouseleave", e=>{
@@ -189,10 +205,19 @@ infoOne.addEventListener("mouseleave", e=>{
 
 infoTwo.addEventListener("mouseenter", e=>{
     
-        baloonTwo.style.animation = "spin 3s linear 0s infinite"
-        baloonTwo.style.borderColor = "#02cf54"
-        infoTwo.style.background = "#ffffff"
-        text2.style.display= "block"
+    baloonTwo.style.animation = "spin 3s linear 0s infinite"
+    baloonTwo.style.borderColor = "#02cf54"
+    infoTwo.style.background = "#ffffff"
+    text2.style.display= "block"
+
+    gsap.to(".content",{
+        duration:1,
+        opacity: 1,
+        ease: Expo.easeInOut,
+        onComplete:complete
+    })
+
+    function complete(){
         logo.style.fontFamily= "Nunito"
         logo.style.paddingTop= "5vw"
         hi.textContent = "Exchange app"
@@ -201,7 +226,15 @@ infoTwo.addEventListener("mouseenter", e=>{
         who.style.fontSize = "4vh"
         note.innerText = "Async JS\nFetch API\nJSON Data"
         note.style.fontSize = "3vh"
-        logo.style.backgroundColor ="#02cf54"
+
+        gsap.from(".content",{
+            duration:1,
+            y: -100,
+            opacity:0,
+            ease: Expo.easeInOut,
+        })
+    }
+    
 
 })
 
@@ -222,15 +255,33 @@ infoThree.addEventListener("mouseenter", e=>{
         baloonThree.style.borderColor = "#02cf54"
         infoThree.style.background = "#ffffff"
         text3.style.display= "block"
-        logo.style.fontFamily= "Nunito"
-        logo.style.paddingTop= "5vw"
-        hi.textContent = "Chat app"
-        hi.style.fontSize = "6vh"
-        who.textContent = "User techniques"
-        who.style.fontSize = "4vh"
-        note.innerText = "Object Oriented Programming\nReal-time Database\nLocal Storage\nDOM Manipulation\nResponsive Design"
-        note.style.fontSize = "3vh"
-        logo.style.backgroundColor ="#02cf54"
+
+
+        gsap.to(".content",{
+            duration:1,
+            opacity: 1,
+            ease: Expo.easeInOut,
+            onComplete:complete
+        })
+    
+        function complete(){
+            logo.style.fontFamily= "Nunito"
+            logo.style.paddingTop= "5vw"
+            hi.textContent = "Chat app"
+            hi.style.fontSize = "6vh"
+            who.textContent = "User techniques"
+            who.style.fontSize = "4vh"
+            note.innerText = "Object Oriented Programming\nReal-time Database\nLocal Storage\nDOM Manipulation\nResponsive Design"
+            note.style.fontSize = "3vh"
+    
+            gsap.from(".content",{
+                duration:1,
+                y: -100,
+                opacity:0,
+                ease: Expo.easeInOut,
+            })
+        }
+        
 
 })
 
@@ -251,16 +302,31 @@ infoFour.addEventListener("mouseenter", e=>{
         baloonFour.style.borderColor = "#02cf54"
         infoFour.style.background = "#ffffff"
         text4.style.display= "block"
-        logo.style.fontFamily= "Nunito"
-        logo.style.paddingTop= "5vw"
-        hi.textContent = "Todo app"
-        hi.style.fontSize = "6vh"
-        who.textContent = "User techniques"
-        who.style.fontSize = "4vh"
-        note.innerText = "DOM Manipulation\nLocal Storage\nVanilla JavaScript"
-        note.style.fontSize = "3vh"
-        logo.style.backgroundColor ="#02cf54"
 
+        gsap.to(".content",{
+            duration:1,
+            opacity: 1,
+            ease: Expo.easeInOut,
+            onComplete:complete
+        })
+    
+        function complete(){
+            logo.style.fontFamily= "Nunito"
+            logo.style.paddingTop= "5vw"
+            hi.textContent = "Todo app"
+            hi.style.fontSize = "6vh"
+            who.textContent = "User techniques"
+            who.style.fontSize = "4vh"
+            note.innerText = "DOM Manipulation\nLocal Storage\nVanilla JavaScript"
+            note.style.fontSize = "3vh"
+        
+                gsap.from(".content",{
+                    duration:1,
+                    y: -100,
+                    opacity:0,
+                    ease: Expo.easeInOut,
+                })
+        }
 })
 
 infoFour.addEventListener("mouseleave", e=>{
