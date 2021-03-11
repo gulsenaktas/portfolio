@@ -254,6 +254,8 @@ body .wrapper .right .infos .goapp {
   height: 100%;
   text-align: center;
   padding-top: 45%;
+  text-decoration: none;
+  color: black;
 }
 
 body .wrapper .right .infos .info-one {

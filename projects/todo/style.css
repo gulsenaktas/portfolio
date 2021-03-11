@@ -14,7 +14,7 @@ body{
     height: 25%;
     left: calc(50vw - 270px);
     top: 2%;
-    background-image: url(./img/bant.png);
+    background-image: url(img/bant.png);
     background-size: 10rem;
     background-repeat: no-repeat;
   }

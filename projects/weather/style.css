@@ -69,7 +69,7 @@
 .container .right-bar {
   width: 50%;
   height: 100vh;
-  background-image: url("/projects/weather/img/[GIF] Weather.gif");
+  background-image: url("img/[GIF] Weather.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -198,6 +198,9 @@ body {
                     height: 100%;
                     text-align: center;
                     padding-top: 45%;
+                    text-decoration: none;
+                    color: black;
+
                 }
                 .info-one{
                     position: absolute;
@@ -208,6 +211,7 @@ body {
                     background-image: url(./img/weather.png);
                     .text1{
                         display: none;
+
                     }
                 }
                 .info-two{
