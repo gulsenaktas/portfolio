@@ -1,9 +1,7 @@
-$color1 : #ff753e;
-$color2 : #00f863;
-$color3 : #ffffff;
-$color4 : #989898;
-$color5 : #7e7d7d;
-$color6 : #02b94b;
+$blue : darkcyan;
+$gray-light : #ffffff;
+$gray-dark : #989898;
+$blue-light : #1ad3d3;
 $font1 : 'Abril Fatface', cursive; 
 $font2 : 'Nunito', cursive; 
 
@@ -14,59 +12,65 @@ $font2 : 'Nunito', cursive;
 }
   
 body {
+    overflow: hidden;
     font-family: $font2;
-    background-color: $color3;
+    background-color: $gray-light;
 
     .wrapper{
         display: flex;
-        height: 100vh;
+        height: 100%;
         .left{
             width: 30vw;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             .logo{
                 height: 66.5vh;
-                background-color: $color2;
-                color: $color3;
+                padding-left: 2vw;
+                padding-bottom: 1vw;
+                background-color: $blue;
+                color: $gray-light;
                 font-family: $font1;
                 .hi{
-                    font-size: 8vw;
-                    margin: 2vw 0 1vw 2vw;
+                    font-size: 104px;
+                    margin-top: 3vw;    
                 }
                 .who{
-                    font-size: 4vw;
-                    margin:2vw 0 1vw 2vw;
+                    font-size: 53px;
+                    margin-top:2vw;
                 }
                 .note{
-                    font-size: 1vw;
-                    margin: 2vw 0 1vw 2vw;
+                    font-size: 18px;
+                    margin-top: 4vw;
                 }
             }
             .left-bottom{
-                height: 32vh;
-                color: $color4;
+                height: 33.5vh;
+                color: $gray-dark;
                 display: flex;
                 justify-content: space-between;
-                padding-top: 10vh;
+                align-items: flex-end;
+                padding-bottom: 2vh;
                 .text{
                     margin-top: 17vh;
                     &::before{
                         display: inline-block;
                         content: "";
-                        border-top: 1px solid $color4;
+                        border-top: 1px solid $gray-dark;
                         width: 5vw;
                         margin: 0 10px 0 0;
                         transform: translateY(-3px);
                     }
                 }
                 .contact{
-                    height: 20vh;
+                    height: 15vh;
                     display: flex;
+                    align-items: flex-end;
                     flex-direction: column;
                     justify-content: space-between;
                     .icon{
-                        color:$color4;
+                        color:$gray-dark;
                         cursor: pointer;
                     }
                 }
@@ -75,7 +79,9 @@ body {
         
         .right{
             width: 100%;
-            .boxs{
+            height: 100%;
+
+            .boxes{
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
@@ -87,11 +93,11 @@ body {
 
                 }
                 .box5{
-                    border-left: 3px solid $color2;
+                    border-left: 3px solid $blue;
                     .box5-half1{
                         height: 50%;
                         width: 60%;
-                        border-top: 3px solid $color2;
+                        border-top: 3px solid $blue;
                     }
                     .box5-half2{
                         height: 50%;
@@ -99,12 +105,12 @@ body {
                 }  
                 .box7{
                     width: 32.55vh;
-                    border-top: 3px solid $color2;
+                    border-top: 3px solid $blue;
                 }
                 .box8{
-                    border-top: 3px solid $color2;
+                    border-top: 3px solid $blue;
                     .box8-half1{
-                        border-right: 2px solid $color2;
+                        border-right: 2px solid $blue;
                         height: 50%;
                         width: 50%;
                     }
@@ -114,7 +120,7 @@ body {
                 }
                 .box9{
                     .box9-half1{
-                        border-top: 3px solid $color2;
+                        border-top: 3px solid $blue;
                         height: 50%;
                         width: 50%;
                     }
@@ -125,61 +131,46 @@ body {
             }
             .baloons{
                 .baloon{
-                    background-color:$color3;
+                    background-color:$gray-light;
                     border-radius: 50%;
                 }
                 .baloon-one{
                     position: absolute;
-                    border-left: 4px solid $color4;
-                    border-top: 4px solid $color4;
+                    border-left: 4px solid $gray-dark;
+                    border-top: 4px solid $gray-dark;
                     width: 32.55vh;
                     height: 32.55vh;
                     top: 9%;
                     left: 33%;
-                    &:hover{
-                        border-color:  green;
-                    }
                 }
                 .baloon-two{
                     position: absolute;
-                    border-bottom: 4px solid $color4;
-                    border-right: 4px solid $color4;
+                    border-bottom: 4px solid $gray-dark;
+                    border-right: 4px solid $gray-dark;
                     width: 26.04vh;
                     height: 26.04vh;
                     top: 14%;
                     left: 55%;
-                    &:hover{
-                        border-color:  green;
-                        animation: spin 5s linear 0s infinite;
-                    }
                 }
                 .baloon-three{
                     position: absolute;
-                    border-left: 4px solid $color4;
-                    border-top: 4px solid $color4;
+                    border-left: 4px solid $gray-dark;
+                    border-top: 4px solid $gray-dark;
                     transform: rotate(60deg);
                     width: 45.57vh;
                     height: 45.57vh;
                     top: 34%;
                     left: 67%;
-                    &:hover{
-                        border-color:  green;
-                        animation: spin 5s linear 0s infinite;
-                    }
                 }
                 .baloon-four{
                     position: absolute;
-                    border-right: 4px solid $color4;
-                    border-bottom: 4px solid $color4;
+                    border-right: 4px solid $gray-dark;
+                    border-bottom: 4px solid $gray-dark;
                     transform: rotate(80deg);
                     width: 23.43vh;
                     height: 23.43vh;
                     top: 70%;
                     left: 48.5%;
-                    &:hover{
-                        border-color:  green;
-                        animation: spin 5s linear 0s infinite;
-                    }
                 }
             }
             .infos{
@@ -203,47 +194,54 @@ body {
 
                 }
                 .info-one{
+                    pointer-events: none;
                     position: absolute;
                     width: 30vh;
                     height: 30vh;
                     top: 10%;
                     left: 33.5%;
                     background-image: url(./img/weather.png);
-                    .text1{
+                    &:hover{
+                        border-color:  green;
+                    }
+                    .text-one{
                         display: none;
 
                     }
                 }
                 .info-two{
+                    pointer-events: none;
                     position: absolute;
                     width: 24vh;
                     height: 24vh;
                     top: 15%;
                     left: 55.5%;
                     background-image: url(./img/exchange.png);
-                    .text2{
+                    .text-two{
                         display: none;
                     }
                 }
                 .info-three{
+                    pointer-events: none;
                     position: absolute;
                     width: 43vh;
                     height: 43vh;
                     top: 35%;
                     left: 67.5%;
                     background-image: url(./img/stringifly.png);
-                    .text3{
+                    .text-three{
                         display: none;
                     }
                 }
                 .info-four{
+                    pointer-events: none;
                     position: absolute;
                     width: 22vh;
                     height: 22vh;
                     top: 70.8%;
                     left: 48.8%;
                     background-image: url(./img/todo.png);
-                    .text4{
+                    .text-four{
                         display: none;
                     }
                 }
@@ -253,9 +251,9 @@ body {
     .overlay {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    background-color: $color2;
-    color: $color3;
+    height: 100%;
+    background-color: $blue;
+    color: $gray-light;
     top: 0%;
     z-index: 1;
     display: flex;

@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow: hidden;
   font-family: "Nunito", cursive;
   background-color: #ffffff;
 }
@@ -14,11 +15,12 @@ body .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 body .wrapper .left {
   width: 30vw;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,28 +35,30 @@ body .wrapper .left {
 
 body .wrapper .left .logo {
   height: 66.5vh;
-  background-color: #00f863;
+  padding-left: 2vw;
+  padding-bottom: 1vw;
+  background-color: darkcyan;
   color: #ffffff;
   font-family: "Abril Fatface", cursive;
 }
 
 body .wrapper .left .logo .hi {
-  font-size: 8vw;
-  margin: 2vw 0 1vw 2vw;
+  font-size: 104px;
+  margin-top: 3vw;
 }
 
 body .wrapper .left .logo .who {
-  font-size: 4vw;
-  margin: 2vw 0 1vw 2vw;
+  font-size: 53px;
+  margin-top: 2vw;
 }
 
 body .wrapper .left .logo .note {
-  font-size: 1vw;
-  margin: 2vw 0 1vw 2vw;
+  font-size: 18px;
+  margin-top: 4vw;
 }
 
 body .wrapper .left .left-bottom {
-  height: 32vh;
+  height: 33.5vh;
   color: #989898;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +66,10 @@ body .wrapper .left .left-bottom {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 10vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2vh;
 }
 
 body .wrapper .left .left-bottom .text {
@@ -80,10 +87,13 @@ body .wrapper .left .left-bottom .text::before {
 }
 
 body .wrapper .left .left-bottom .contact {
-  height: 20vh;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -100,9 +110,10 @@ body .wrapper .left .left-bottom .contact .icon {
 
 body .wrapper .right {
   width: 100%;
+  height: 100%;
 }
 
-body .wrapper .right .boxs {
+body .wrapper .right .boxes {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,53 +122,53 @@ body .wrapper .right .boxs {
       flex-wrap: wrap;
 }
 
-body .wrapper .right .boxs .box {
+body .wrapper .right .boxes .box {
   width: 44.66vh;
   min-width: 44.66vh;
   height: 33vh;
   z-index: -1;
 }
 
-body .wrapper .right .boxs .box5 {
-  border-left: 3px solid #00f863;
+body .wrapper .right .boxes .box5 {
+  border-left: 3px solid darkcyan;
 }
 
-body .wrapper .right .boxs .box5 .box5-half1 {
+body .wrapper .right .boxes .box5 .box5-half1 {
   height: 50%;
   width: 60%;
-  border-top: 3px solid #00f863;
+  border-top: 3px solid darkcyan;
 }
 
-body .wrapper .right .boxs .box5 .box5-half2 {
+body .wrapper .right .boxes .box5 .box5-half2 {
   height: 50%;
 }
 
-body .wrapper .right .boxs .box7 {
+body .wrapper .right .boxes .box7 {
   width: 32.55vh;
-  border-top: 3px solid #00f863;
+  border-top: 3px solid darkcyan;
 }
 
-body .wrapper .right .boxs .box8 {
-  border-top: 3px solid #00f863;
+body .wrapper .right .boxes .box8 {
+  border-top: 3px solid darkcyan;
 }
 
-body .wrapper .right .boxs .box8 .box8-half1 {
-  border-right: 2px solid #00f863;
+body .wrapper .right .boxes .box8 .box8-half1 {
+  border-right: 2px solid darkcyan;
   height: 50%;
   width: 50%;
 }
 
-body .wrapper .right .boxs .box8 .box8-half2 {
+body .wrapper .right .boxes .box8 .box8-half2 {
   height: 50%;
 }
 
-body .wrapper .right .boxs .box9 .box9-half1 {
-  border-top: 3px solid #00f863;
+body .wrapper .right .boxes .box9 .box9-half1 {
+  border-top: 3px solid darkcyan;
   height: 50%;
   width: 50%;
 }
 
-body .wrapper .right .boxs .box9 .box9-half2 {
+body .wrapper .right .boxes .box9 .box9-half2 {
   height: 50%;
 }
 
@@ -176,10 +187,6 @@ body .wrapper .right .baloons .baloon-one {
   left: 33%;
 }
 
-body .wrapper .right .baloons .baloon-one:hover {
-  border-color: green;
-}
-
 body .wrapper .right .baloons .baloon-two {
   position: absolute;
   border-bottom: 4px solid #989898;
@@ -188,12 +195,6 @@ body .wrapper .right .baloons .baloon-two {
   height: 26.04vh;
   top: 14%;
   left: 55%;
-}
-
-body .wrapper .right .baloons .baloon-two:hover {
-  border-color: green;
-  -webkit-animation: spin 5s linear 0s infinite;
-          animation: spin 5s linear 0s infinite;
 }
 
 body .wrapper .right .baloons .baloon-three {
@@ -208,12 +209,6 @@ body .wrapper .right .baloons .baloon-three {
   left: 67%;
 }
 
-body .wrapper .right .baloons .baloon-three:hover {
-  border-color: green;
-  -webkit-animation: spin 5s linear 0s infinite;
-          animation: spin 5s linear 0s infinite;
-}
-
 body .wrapper .right .baloons .baloon-four {
   position: absolute;
   border-right: 4px solid #989898;
@@ -224,12 +219,6 @@ body .wrapper .right .baloons .baloon-four {
   height: 23.43vh;
   top: 70%;
   left: 48.5%;
-}
-
-body .wrapper .right .baloons .baloon-four:hover {
-  border-color: green;
-  -webkit-animation: spin 5s linear 0s infinite;
-          animation: spin 5s linear 0s infinite;
 }
 
 body .wrapper .right .infos .info {
@@ -259,6 +248,7 @@ body .wrapper .right .infos .goapp {
 }
 
 body .wrapper .right .infos .info-one {
+  pointer-events: none;
   position: absolute;
   width: 30vh;
   height: 30vh;
@@ -267,11 +257,16 @@ body .wrapper .right .infos .info-one {
   background-image: url(./img/weather.png);
 }
 
-body .wrapper .right .infos .info-one .text1 {
+body .wrapper .right .infos .info-one:hover {
+  border-color: green;
+}
+
+body .wrapper .right .infos .info-one .text-one {
   display: none;
 }
 
 body .wrapper .right .infos .info-two {
+  pointer-events: none;
   position: absolute;
   width: 24vh;
   height: 24vh;
@@ -280,11 +275,12 @@ body .wrapper .right .infos .info-two {
   background-image: url(./img/exchange.png);
 }
 
-body .wrapper .right .infos .info-two .text2 {
+body .wrapper .right .infos .info-two .text-two {
   display: none;
 }
 
 body .wrapper .right .infos .info-three {
+  pointer-events: none;
   position: absolute;
   width: 43vh;
   height: 43vh;
@@ -293,11 +289,12 @@ body .wrapper .right .infos .info-three {
   background-image: url(./img/stringifly.png);
 }
 
-body .wrapper .right .infos .info-three .text3 {
+body .wrapper .right .infos .info-three .text-three {
   display: none;
 }
 
 body .wrapper .right .infos .info-four {
+  pointer-events: none;
   position: absolute;
   width: 22vh;
   height: 22vh;
@@ -306,15 +303,15 @@ body .wrapper .right .infos .info-four {
   background-image: url(./img/todo.png);
 }
 
-body .wrapper .right .infos .info-four .text4 {
+body .wrapper .right .infos .info-four .text-four {
   display: none;
 }
 
 body .overlay {
   position: absolute;
   width: 100%;
-  height: 100vh;
-  background-color: #00f863;
+  height: 100%;
+  background-color: darkcyan;
   color: #ffffff;
   top: 0%;
   z-index: 1;
