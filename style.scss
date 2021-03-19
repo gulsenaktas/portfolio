@@ -70,9 +70,14 @@ body {
                     flex-direction: column;
                     justify-content: space-between;
                     .icon{
+                        border: 3px solid $gray-light;
                         padding-right: 5px;
                         color:$gray-dark;
-                        cursor: pointer;                        
+                        cursor: pointer;
+                        &:hover{
+                            border:3px solid;
+                            border-color: $gray-light $blue-light $gray-light $gray-light;
+                        }
                     }
                 }
             }
@@ -191,7 +196,10 @@ body {
                     text-align: center;
                     padding-top: 45%;
                     text-decoration: none;
-                    color: black;               
+                    color: $blue-light;
+                    font-weight: bold;
+                    font-size:17px;
+
                 }
                 .info-one{
                     pointer-events: none;

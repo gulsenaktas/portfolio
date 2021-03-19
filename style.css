@@ -104,9 +104,15 @@ body .wrapper .left .left-bottom .contact {
 }
 
 body .wrapper .left .left-bottom .contact .icon {
+  border: 3px solid #ffffff;
   padding-right: 5px;
   color: #989898;
   cursor: pointer;
+}
+
+body .wrapper .left .left-bottom .contact .icon:hover {
+  border: 3px solid;
+  border-color: #ffffff #1ad3d3 #ffffff #ffffff;
 }
 
 body .wrapper .right {
@@ -245,7 +251,9 @@ body .wrapper .right .infos .goapp {
   text-align: center;
   padding-top: 45%;
   text-decoration: none;
-  color: black;
+  color: #1ad3d3;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 body .wrapper .right .infos .info-one {
