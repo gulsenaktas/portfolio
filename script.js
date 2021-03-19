@@ -18,6 +18,7 @@ const boxColor = document.querySelector(".boxcolor");
 const logoTitle= document.querySelector(".logo-title");
 
 
+
 infoOne.addEventListener("mouseenter", e=>{
 
     baloonOne.style.animation = "spin 3s linear 0s infinite"
@@ -171,104 +172,117 @@ function completed(info){
 
 // ANIMATIONS
 
-// ---- OVERLAY ---- //
-gsap.to(".overlay .h1", 2, {
-    opacity: 0,
-    y: -60,
-    ease: Expo.easeInOut
-})
 
-gsap.to(".overlay span", 2, {
-    delay: .3,
-    opacity: 0,
-    y: -60,
-    ease: Expo.easeInOut
-})
+if(performance.navigation.type == 2){
+    document.querySelector(".overlay").style.display = "None"
 
-gsap.to(".overlay", 2, {
-    delay: 1,
-    top: "-100%",
-    ease: Expo.easeInOut
-})
+    const arr = [infoOne,infoTwo,infoThree,infoFour]
+    console.log(arr);
+    arr.forEach(info=>{
+        info.style.pointerEvents = "auto"
+    })
 
-gsap.from(".logo", 1, {
-    delay: 2,
-    opacity: 0,
-    y: -100,
-    ease: Expo.easeInOut
-})
+}else{
+        
+    // ---- OVERLAY ---- //
+    gsap.to(".overlay .h1", 2, {
+        opacity: 0,
+        y: -60,
+        ease: Expo.easeInOut
+    })
 
+    gsap.to(".overlay span", 2, {
+        delay: .3,
+        opacity: 0,
+        y: -60,
+        ease: Expo.easeInOut
+    })
 
-gsap.from(".contact", 2, {
-    delay: 2,
-    opacity: 0,
-    y: -100,
-    ease: Expo.easeInOut
-})
+    gsap.to(".overlay", 2, {
+        delay: 1,
+        top: "-100%",
+        ease: Expo.easeInOut
+    })
 
-gsap.from(".text", 2, {
-    delay: 2,
-    opacity: 0,
-    y: -100,
-    ease: Expo.easeInOut
-})
+    gsap.from(".logo", 1, {
+        delay: 2,
+        opacity: 0,
+        y: -100,
+        ease: Expo.easeInOut
+    })
 
 
-// ---- BALOONS ---- //
-gsap.from(".baloon-one, .info-one", 1, {
-    delay: 3.5,
-    opacity: 0,
-    ease: Expo.easeInOut,
-    onComplete:completed,
-    onCompleteParams:[infoOne]
-})
+    gsap.from(".contact", 2, {
+        delay: 2,
+        opacity: 0,
+        y: -100,
+        ease: Expo.easeInOut
+    })
 
-gsap.from(".baloon-two, .info-two", 2, {
-    delay: 4,
-    opacity: 0,
-    ease: Expo.easeInOut,
-    onComplete:completed,
-    onCompleteParams:[infoTwo]
+    gsap.from(".text", 2, {
+        delay: 2,
+        opacity: 0,
+        y: -100,
+        ease: Expo.easeInOut
+    })
 
-})
 
-gsap.from(".baloon-three, .info-three", 2, {
-    delay: 4.5,
-    opacity: 0,
-    ease: Expo.easeInOut,
-    onComplete:completed,
-    onCompleteParams:[infoThree]
-})
+    // ---- BALOONS ---- //
+    gsap.from(".baloon-one, .info-one", 1, {
+        delay: 3.5,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        onComplete:completed,
+        onCompleteParams:[infoOne]
+    })
 
-gsap.from(".baloon-four, .info-four", 2, {
-    delay: 5,
-    opacity: 0,
-    ease: Expo.easeInOut,
-    onComplete:completed,
-    onCompleteParams:[infoFour]
-})
+    gsap.from(".baloon-two, .info-two", 2, {
+        delay: 4,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        onComplete:completed,
+        onCompleteParams:[infoTwo]
 
-// ---- ROADS ---- //
-gsap.from(".box7", 2, {
-    delay: 2.4,
-    opacity: 0,
-    ease: Expo.linear
-})
+    })
 
-gsap.from(".box8", 2, {
-    delay: 2.5,
-    opacity: 0,
-    ease: Expo.easeInOut
-})
+    gsap.from(".baloon-three, .info-three", 2, {
+        delay: 4.5,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        onComplete:completed,
+        onCompleteParams:[infoThree]
+    })
 
-gsap.from(".box9", 2, {
-    delay: 2.5,
-    opacity: 0,
-    ease: Expo.easeInOut
-})
+    gsap.from(".baloon-four, .info-four", 2, {
+        delay: 5,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        onComplete:completed,
+        onCompleteParams:[infoFour]
+    })
 
-gsap.from(".box5", 2, {
-    delay: 2.5,
-    opacity: 0,
-    ease: Expo.easeInOut
-})
+    // ---- ROADS ---- //
+    gsap.from(".box7", 2, {
+        delay: 2.4,
+        opacity: 0,
+        ease: Expo.linear
+    })
+
+    gsap.from(".box8", 2, {
+        delay: 2.5,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
+
+    gsap.from(".box9", 2, {
+        delay: 2.5,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
+
+    gsap.from(".box5", 2, {
+        delay: 2.5,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
+}
