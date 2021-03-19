@@ -21,7 +21,7 @@ const logoTitle= document.querySelector(".logo-title");
 infoOne.addEventListener("mouseenter", e=>{
 
     baloonOne.style.animation = "spin 3s linear 0s infinite"
-    baloonOne.style.borderColor = "#1ad3d3"
+    baloonOne.style.borderColor = "#008b8b"
     infoOne.style.background = "#ffffff"
     textOne.style.display= "block"
 
@@ -58,7 +58,7 @@ infoOne.addEventListener("mouseleave", e=>{
 infoTwo.addEventListener("mouseenter", e=>{
 
     baloonTwo.style.animation = "spin 3s linear 0s infinite"
-    baloonTwo.style.borderColor = "#1ad3d3"
+    baloonTwo.style.borderColor = "#008b8b"
     infoTwo.style.background = "#ffffff"
     textTwo.style.display= "block"
 
@@ -95,7 +95,7 @@ infoTwo.addEventListener("mouseleave", e=>{
 infoThree.addEventListener("mouseenter", e=>{
     
     baloonThree.style.animation = "spin 3s linear 0s infinite"
-    baloonThree.style.borderColor = "#1ad3d3"
+    baloonThree.style.borderColor = "#008b8b"
     infoThree.style.background = "#ffffff"
     textThree.style.display= "block"
 
@@ -132,7 +132,7 @@ infoThree.addEventListener("mouseleave", e=>{
 infoFour.addEventListener("mouseenter", e=>{
     
     baloonFour.style.animation = "spin 3s linear 0s infinite"
-    baloonFour.style.borderColor = "#1ad3d3"
+    baloonFour.style.borderColor = "#008b8b"
     infoFour.style.background = "#ffffff"
     textFour.style.display= "block"
 

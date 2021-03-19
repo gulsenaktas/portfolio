@@ -1,4 +1,4 @@
-$blue : darkcyan;
+$blue : #008b8b;
 $gray-light : #ffffff;
 $gray-dark : #989898;
 $blue-light : #1ad3d3;
@@ -70,8 +70,9 @@ body {
                     flex-direction: column;
                     justify-content: space-between;
                     .icon{
+                        padding-right: 5px;
                         color:$gray-dark;
-                        cursor: pointer;
+                        cursor: pointer;                        
                     }
                 }
             }
@@ -190,8 +191,7 @@ body {
                     text-align: center;
                     padding-top: 45%;
                     text-decoration: none;
-                    color: black;
-
+                    color: black;               
                 }
                 .info-one{
                     pointer-events: none;
@@ -201,9 +201,6 @@ body {
                     top: 10%;
                     left: 33.5%;
                     background-image: url(./img/weather.png);
-                    &:hover{
-                        border-color:  green;
-                    }
                     .text-one{
                         display: none;
 
@@ -278,5 +275,131 @@ body {
     }
     to {
         transform:rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1128px){
+    .boxes{
+        .box{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-height: 501px){
+    .boxes{
+        .box{
+            display: none;
+        }
+    }
+}
+
+@media screen and  (max-width: 576px){
+    body{
+        .wrapper{
+            flex-direction: column;
+            .left{
+                width: 100vw;
+                height: 23vh;
+                flex-direction: row;
+                background-color: $blue;    
+                .logo{
+                    background-color: $blue;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    height: 23vh;
+                    
+                    .logo-title{
+                        .hi{
+                            font-size: 40px;
+                            margin-top: 0;
+                        }
+                        .who{
+                            font-size: 25px;
+                            margin-top: 0;
+                        }
+                    }
+                    .note{
+                        font-size: 15px;
+                        margin-top: 0;
+                    }
+                }
+                .left-bottom{
+                    .text{
+                        display: none;
+                    }
+                    .contact{
+                        position: absolute;
+                        bottom: 2vh;
+                        right: 6vw;
+                    }
+                }
+            }
+            
+            .right{
+                height: 80vh;
+                .boxes{
+                    .box{
+                        display: none;
+                    }
+                }
+                .baloons{
+                    .baloon-one{
+                        width: 29vh;
+                        height: 29vh;
+                        top: 25%;
+                        left: 2%;
+                    }
+                    .baloon-two{
+                        width: 24vh;
+                        height: 24vh;
+                        top: 32%;
+                        left: 41%;
+                    }
+                    .baloon-three{
+                        width: 35vh;
+                        height: 35vh;
+                        top: 57%;
+                        left: 45%;
+                    }
+                    .baloon-four{
+                        width: 23vh;
+                        height: 23vh;
+                        top: 75%;
+                        left: 15%;
+                    }
+                }
+                .infos{
+                    .info-one{
+                        width: 27vh;
+                        height: 27vh;
+                        top: 25.8%;
+                        left: 3%;                        
+                    }
+                    .info-two{
+                        width: 22vh;
+                        height: 22vh;
+                        top: 32.8%;
+                        left: 41.9%;
+                    }
+                    .info-three{
+                        width: 32.5vh;
+                        height: 32.5vh;
+                        top: 58%;
+                        left: 47%;
+                    }
+                    .info-four{
+                        width: 21vh;
+                        height: 21vh;
+                        top: 76%;
+                        left: 16%;
+                        
+                    }
+                }
+            }
+        }
+    
     }
 }
