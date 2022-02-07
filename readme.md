@@ -2,7 +2,7 @@
 
 A website that includes my practices that I have developed with pure JavaScript. I had the opportunity to do practice in Html, Sass, JavaScript during the design phase of the project. I learned new methods and use new tools like the Gsap library for animations.
 
-**Visit Website:  https://www.gulsenaktas.art/works/**
+**Visit Website: https://www.aktasgulsen.art/works/**
 
 ## Used Techniques
 * DOM Manipulation
