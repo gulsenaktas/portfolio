@@ -10,8 +10,8 @@ body{
   }
   .clips{
     position: absolute;
-    width: 30%;
-    height: 25%;
+    min-width: 150px;
+    min-height: 130px;
     left: calc(50vw - 270px);
     top: 2%;
     background-image: url(img/bant.png);
@@ -45,6 +45,7 @@ body{
     background:transparent;
     max-width: 400px;
     box-shadow: none;
+    padding-top: 80px;
   }
   .addtodo{
     color: black;
